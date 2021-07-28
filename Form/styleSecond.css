@@ -1,0 +1,39 @@
+*{margin: 0px;
+padding: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent{
+    height: 100vh;
+    display:flex;
+     justify-content: center; 
+    align-items: center; 
+    flex-direction: row-reverse;
+    background-color: thistle;
+}
+
+.child{
+    background-color: teal;
+    justify-content: center;
+    padding: 8px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+h2{
+    margin-top: 10px;
+}
+
+#submit,#reset{
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(80, 80, 173);
+    color: white;
+}
+
+/* #reset{
+    border-radius: 5px;
+    padding: 2px;
+    background-color: blue;
+    color: white;
+} */

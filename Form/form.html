@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="backend.js">
+        <h1>Shopping details:</h1>
+        <h2 style="margin-top: 50px;">Contact Information:</h2>
+        <p>Name: <input type="text" name="name" required placeholder="Your Name"></p>
+
+        <p>gender:
+            Male<input type="radio" name="gender" value="male" id="male">
+            Female <input type="radio" name="gender" value="female" id="female"></p>
+
+        <p>Address: <textarea name="address" id="address" cols="150" rows="10" required></textarea></p>
+        <p>Mobile Number: <input type="number" name="mob_num" id="mob_num" required></p>
+        <p>D.O.B. : <input type="date" name="DOB" id="DOB" required></p>
+        <p>Email: <input type="email" name="email" id="email" required></p>
+        <h2 style="margin-top: 50px;">Payment Information:</h2>
+        <p>Card Type <select name="card_type" id="card_type" required>
+                <option value="">--Select the card--</option>
+                <option value="rupay">Rupay</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+            </select></p>
+        <p>Card Holder Name : <input type="text" required></p>
+        <p>Card Number : <input type="number" name="card_number" id="card_number" required></p>
+        <p>Expiration date : <input type="date" name="exp_date" id="exp_date" required></p>
+        <p>CVV : <input type="password" name="cvv" id="cvv" required></p>
+        <input type="submit" value="Pay Now">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+
+</html>
